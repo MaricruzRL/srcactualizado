@@ -1,0 +1,130 @@
+/* Estilos para la versión de impresión */
+@media print {
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  .estvertical, .estvertical * {
+    visibility: visible;
+    overflow-y: visible;
+  }
+
+
+  .estverticalcontenido {
+    width: 18cm; /* Ancho para tamaño carta en centímetros */
+    height: 25.7cm; /* Alto para tamaño carta en centímetros */
+    overflow-y: visible;
+    margin: 0;
+    padding: 0;
+  }
+  .estverticalcontenido header {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .btn-asig{
+    display: none;
+  }
+  
+ .estverticalcontenido::-webkit-scrollbar {
+  display: none;
+}
+
+.estverticalcontenido {
+  scrollbar-width: none;
+}
+  
+}
+
+
+
+
+/* En TuComponente.css o tu archivo de estilos */
+.estvertical {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  
+}
+
+.estverticalcontenido {
+  background: #fff; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 8px;
+ /* width: 150vh;  Ajusta según sea necesario */
+ width: 80%;
+  height: 98vh;/*ALTO*/
+  overflow-y: auto;
+  
+}
+
+
+.mi-tabla2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mi-tabla2 th, .mi-tabla2 td {
+  border: 1px solid #000000;
+  text-align: left;
+  padding:1px;
+}
+
+.mi-tabla2 th {
+  background-color: #f2f2f2;
+}
+
+.mensajevertical {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+.mensajeverticalcontenido {
+  background: #fff; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 8px;
+ /* width: 150vh;  Ajusta según sea necesario */
+ width: 70vh;
+  height: 60vh;/*ALTO*/
+  overflow-y: auto;
+  
+}
+
+
+.mensajeseguimiento {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+.mensajeseguimientocontenido {
+  background: #fff; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 8px;
+ /* width: 150vh;  Ajusta según sea necesario */
+ width: 80vh;
+  height: 70vh;/*ALTO*/
+  overflow-y: auto;
+  
+}
